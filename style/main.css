@@ -2,32 +2,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
-/*
+
 :root {
   --menu-color: #4a4a4a;
   --bg-color: #3cdbc0;
   --text-color: #ffffff;
+  font-family: "Rubik", sans-serif;
 }
-*/
+
 .item-li {
   list-style: none;
   display: inline;
+  padding:0 10px;
 }
 
- .logo {
-    width: 115px;
-  }
+.logo {
+  width: 115px;
+  padding: 10px 0;
+}
 
 .header {
-  /* background-color: blue;*/
   width: 100%;
-  
+ /*margin-bottom: 13px;*/
+  position: fixed top;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:  0  0 13px 0 ;
+}
 
- 
+.item {
+  color: var(--menu-color);
+  font-size: 16px;
+}
 
+.main {
+  height: 100vh;
+  background-color: #3cdbc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/*DEJO AQUI OTRA MANERA DE HACERLO QUE HE INTENTADO*/
+/*.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.item-h1 {
+  color: var(--text-color);
+  display: block;
+  text-align: center;
+}
+
+@media all and (min-width: 768px){
+ .header { margin-bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+
+  .main {font-size:40px;}
+}
